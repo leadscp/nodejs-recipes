@@ -1,0 +1,17 @@
+{
+  "name": "tp_recipes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+    "mycommand": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "inquirer": "^1.2.1",
+    "unirest": "^0.5.1"
+  }
+}
