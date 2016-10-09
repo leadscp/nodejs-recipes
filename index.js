@@ -5,6 +5,7 @@ const unirest = require('unirest')
 const inquirer = require('inquirer')
 const fs = require('fs')
 
+// Création du profil utilisateur
 function createProfile () {
     var loop = true
 
@@ -38,6 +39,7 @@ function createProfile () {
     })
 }
 
+// Ajout des favoris 
 function setFavorites(cuisine, diet, excludeIngredients, intolerances, numberResult) {
     inquirer.prompt([
         {
