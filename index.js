@@ -43,7 +43,7 @@ function createProfile () {
 function setFavorites(cuisine, diet, excludeIngredients, intolerances, numberResult) {
     inquirer.prompt([
         {
-            type: 'list',
+            type: 'checkbox',
             message: '1) Choose the cuisine you want to eat : ',
             name: 'cuisine',
             choices: ['Chinese', 'Japanese', 'Vietnamese', 'Thai', 'Indian', 'Mexican', 'American', 'French', 'European', 'Spanish']
@@ -58,6 +58,6 @@ function setFavorites(cuisine, diet, excludeIngredients, intolerances, numberRes
     });
 }
 
-createProfile().end((name) => {
+createProfile().then((name) => {
     setFavorites()
 })
