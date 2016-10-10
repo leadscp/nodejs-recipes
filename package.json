@@ -12,6 +12,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "inquirer": "^1.2.1",
+    "sqlite": "^2.2.0",
     "unirest": "^0.5.1"
   }
 }
